@@ -122,7 +122,7 @@ const Hero = () => (
     {/* Background Image with Overlay */}
     <div className="absolute inset-0">
       <img 
-        src="./ram-parivar.jpg" 
+        src="/ram-parivar.jpg" 
         onError={(e) => {
           e.target.onerror = null; 
           e.target.src="https://images.unsplash.com/photo-1561569727-b52b20464689?q=80&w=2070&auto=format&fit=crop"
@@ -240,7 +240,7 @@ const Deities = () => {
       name: "श्री राम दरबार",
       desc: "मर्यादा पुरुषोत्तम राम, माता सीता और भ्राता लक्ष्मण।",
       // Updated to use the uploaded deity image
-      img: "./ram-darbar.jpg",
+      img: "/ram-darbar.jpg",
       fallback: "https://images.unsplash.com/photo-1561569727-b52b20464689?q=80&w=2070&auto=format&fit=crop"
     },
     {
@@ -329,31 +329,31 @@ const Gallery = () => {
   const galleryItems = [
     { 
       type: 'image',
-      src: "./trust-meeting.jpg",
+      src: "/trust-meeting.jpg",
       alt: "ट्रस्ट बैठक", 
       desc: "मंदिर विकास एवं योजना बैठक" 
     },
     { 
       type: 'image',
-      src: "./trust-members.jpg", 
+      src: "/trust-members.jpg", 
       alt: "ट्रस्ट सदस्य", 
       desc: "नारायण सागर धार्मिक ट्रस्ट के सम्मानित सदस्य" 
     },
     { 
       type: 'image',
-      src: "./ram-darbar.jpg", 
+      src: "/ram-darbar.jpg", 
       alt: "राम दरबार", 
       desc: "श्री राम, लक्ष्मण और सीता माता के भव्य दर्शन" 
     },
     {
       type: 'video',
-      src: "./procession-video-1.mp4",
+      src: "/procession-video-1.mp4",
       alt: "शोभा यात्रा",
       desc: "मंदिर की भव्य शोभा यात्रा और पालकी"
     },
     {
       type: 'video',
-      src: "./procession-video-2.mp4",
+      src: "/procession-video-2.mp4",
       alt: "मंदिर प्रवेश",
       desc: "भक्तों द्वारा मंदिर में प्रवेश और उत्सव"
     }
@@ -371,7 +371,7 @@ const Gallery = () => {
                   <video 
                     controls 
                     className="w-full h-full object-cover"
-                    poster="./ram-darbar.jpg" // Optional poster
+                    poster="/ram-darbar.jpg" // Optional poster
                   >
                     <source src={item.src} type="video/mp4" />
                     आपका ब्राउज़र वीडियो टैग का समर्थन नहीं करता है।
